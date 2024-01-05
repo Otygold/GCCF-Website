@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,100;1,600;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+  font-family: 'Montserrat', monospace;
+}
+.navbar{
+  padding: 0.5% 7%;
+  font-family: "Montserrat",cursive;
+  background-color: whitesmoke;
+  color: #333;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #666;
+}
+.nav-link{
+  margin: 0 18px;
+  font-size: 1.2rem;
+}
+
+.intro{
+  padding: 5% 10%;
+  background-color: green;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.contact_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding: 7% 0; */
+}
+.contact_text h1{
+  font-family: 'Montserrat', monospace;
+  font-size: 4rem;
+  font-weight: bold;
+  color: darkgreen;
+}
+.contact_content, .contactInfo, footer{
+  padding: 7% 10%;
+}
+.contact_content{
+  background-color: whitesmoke;
+}
+.contactInfo{
+  background: green;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form{
+  width: 45%;
+  padding:40px;
+  background: #fff;
+  color: #333;
+  margin-left: 5%;
+  border-radius: 8px;
+}
+.contact_form h2{
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+
+}
+.contact_form .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact_form .inputBox input,
+.contact_form .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contact_form .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5%;
+  color: #666;
+}
+.contact_form .inputBox input:focus ~ span,
+.contact_form .inputBox input:valid ~ span,
+.contact_form .inputBox textarea:focus ~ span,
+.contact_form .inputBox textarea:valid ~ span{
+  color: green;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contact_form .inputBox input[type="button"]{
+  width: 100px;
+  background: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+.contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  background-color: #fff;
+  width: 400px;
+  padding: 30px;
+  margin: 15px 30px;
+  border-radius: 8px;
+  border-bottom: 2px solid black;
+  /* flex-direction: column; */
+}
+.contactInfo .box .icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  background-color: #333;
+  color: #fff;
+}
+.contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #333;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.contactInfo .box .text h3{
+  font-weight: 500;
+  color: darkgreen;
+}
+
+footer ul li {
+    font-size: 16px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer .icon{
+    margin: 5px;
+    font-size: 20px;
+}
+footer .icon:hover{
+  color: #666;
+}
+footer li a{
+    color: #333;
+    text-decoration: none;
+}
+footer .icons a{
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .contact_text{
+    align-items: center;
+  }
+  .contact_text h1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .contact_form{
+    width: 80%;
+    margin: 20px  auto;
+  }
+  .contactInfo .box{
+    margin: 20px  auto;
+  }
+  .footbox{
+    margin: 20px 0;
+  }
+
+}

@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;700&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,400;0,900;1,100;1,600;1,900&family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    scroll-behavior: smooth;
+}
+
+.full-container{
+    min-height: 100vh;
+    width: 100%;
+}
+p{
+    color: #8f8f8f;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: thin;
+}
+.box-wrapper {
+    padding: 7% 15%;
+}
+
+/* Navigation Section  */
+.navbar{
+  padding: 0.5% 7%;
+  font-family: "Montserrat",cursive;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-size: 2.7rem;
+}
+.nav-link{
+  margin: 0 18px;
+  font-size: 1.8rem;
+}
+/* End Navigation Section  */
+
+/* Home Section  */
+#home{
+    background-image: url(./images/wbt.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#home::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+#home .home{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 230px 50px 0;
+    justify-content: flex-start;
+}
+#home h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #79AC78;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+#home h1:nth-child(1) span{
+    animation-delay: 2.5s;
+}
+#home h1:nth-child(2) span{
+    animation-delay: 3.5s;
+}
+#home h1:nth-child(3) span{
+    animation-delay: 4.5s;
+}
+#home h1{
+    display: block;
+    width: fit-content;
+    font-family: 'Kalnia', serif;
+    font-size: 5rem;
+    font-weight: bold;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#home h1:nth-child(1){
+    animation-delay: 1s;
+}
+#home h1:nth-child(2){
+    animation-delay: 2s;
+}
+#home h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+#home h2{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+    font-family: 'Sacramento', cursive;
+}
+/* End of home section  */
+
+/* Features Section  */
+#features{
+    padding: 7% 15%;
+}
+#features .box{
+    padding: 5%;
+    text-align: center;
+    align-items: center;
+    /* margin: 0 2%; */
+}
+#features h3{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.icon{
+    color: #79AC78;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: darkgreen;
+}
+
+/* End of Features Section  */
+#awareness{
+    background-color: #1a8519;
+}
+#awareness .map-info{
+    border: 5px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+}
+#awareness .meetings{
+    padding: 3%, 5%;
+    margin-bottom: 10px
+}
+#awareness h2{
+    font-family: 'Kalnia', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    width: fit-content;
+    color: #191919;
+    margin-bottom: 20px;
+}
+#awareness ul li{
+    font-size: 1.8rem;
+    color: whitesmoke;
+    line-height: 2;
+    font-family: 'Sacramento', cursive;
+}
+#awareness p{
+    color: rgb(253, 220, 220);
+    margin-bottom: 10px;
+}
+/* End of awareness Section  */
+
+/* Testimonial Section  */
+#testimonial{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+#testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 20px;
+}
+#testimonial h2{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+#testimonial em{
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+}
+
+/* end of testimonials section  */
+
+/* Call to action section  */
+#cta{
+    background-image: url(./images/gccf_cta_pic.jpg);
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.cta-container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cta div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0 0 600px;
+    /* margin-left: 200px; */
+}
+#cta::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color:#013220;
+    opacity: 0.5;
+    z-index: -1;
+}
+#cta h1{
+    font-size: 7rem;
+    color: white;
+    font-family: 'Kalnia', serif;
+    font-weight: 600;
+    font-style: italic;
+    padding: 20px;
+}
+.cta_same{
+    font-size: 4rem;
+    font-family: 'Sacramento', cursive;
+    color: #333;
+}
+#cta a{
+    margin-top: 15px;
+    padding: 5px 15px;
+    font-size: 1.7rem;
+    color: white;
+}
+.your{
+    position: relative;
+    top: -20px;
+    left: 5px;
+    padding: 0 7px;
+    font-weight: 400;
+}
+
+/* End of Call to action section  */
+
+/* footer section  */
+
+footer{
+    padding: 3% 7%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: thin;
+    background-color: #1a8519;
+}
+footer p{
+    color: white;
+}
+footer ul li {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    list-style: none;
+}
+footer li a{
+    color: white;
+    text-decoration: none;
+}
+footer .icons a{
+  text-decoration: none;
+}
+footer .icon{
+    margin: 7px;
+    color: whitesmoke;
+}
+footer .icon:hover, footer li a:hover{
+    color: wheat;
+}
+footer hr{
+  margin: 20px auto;
+}
+footer .copyright{
+  width: 20%;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+/* End footer section  */
+
+/* keyframes */
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name {
+    100% {
+        color: #1a8519;
+        font-weight: 500;
+    }
+}
+
+/* End keyframes  */
+
+/* about page styles  */
+
+.about{
+  padding: 7% 15%;
+  text-align: left;
+}
+.about_text{
+  padding: 40px 0;
+  font-size: 1.5rem;
+}
+.intro{
+  padding: 10% 0 0 7%;
+  background-color: #white;
+  color: #333;
+}
+.intro h1{
+  font-size: 5rem;
+  font-family: 'Montserrat', cursive;
+}
+.FirstAboutImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap{
+  float: left;
+  margin-right: 20px;
+}
+#about h5{
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #8f8f8f;
+}
+.aims_obj ul li, p{
+  list-style: none;
+  color: #8f8f8f;
+  font-size: 1.5rem;
+  font-size: 'Montserrat';
+  font-weight: 100;
+}
+.outro{
+  margin-top: 40px;
+}
+
+/* end about page style */
+
+/* Media queries  */
+@media (max-width: 500px) {
+  #home h1{
+    font-size: 3.5rem;
+  }
+  #home .home{
+    padding: 150px 0 20px 40px;
+  }
+   #cta div{
+     padding: 0;
+   }
+   #cta h1{
+     font-size: 5rem;
+   }
+   #cta .cta_same{
+     font-size: 3rem;
+     color: green;
+   }
+   #awareness .map-info{
+     /* width: 80%; */
+     border-radius: 0px;
+     border: none;
+   }
+   #testimonial h2{
+       font-size: 1.5rem;
+   }
+   #testimonial em{
+       font-size: 1.3rem;
+   }
+   footer{
+     padding: 5% 7%;
+   }
+   footer .footbox{
+     margin: 0 15px;
+   }
+   footer .copyright{
+     width: 50%;
+   }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  #cta div{
+    padding: 0;
+  }
+  #home .home{
+    padding: 150px 0 20px 50px;
+  }
+  footer .footbox{
+    margin: 0 15px;
+  }
+}
